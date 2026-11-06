@@ -1,9 +1,11 @@
-# palych.dev — Pages test
+# palych.dev
 
-Public static copy for testing GitHub Pages connectivity on mobile networks.
+Production static site: https://palych-dev.ru
 
-The main repository remains private. This copy uses the standard github.io URL; production DNS and the Vercel deployment are unchanged.
+Hosted on GitHub Pages from the root of the main branch. No build is required. GitHub automatically publishes updates pushed to main.
 
-Files are copied from the production static site. No build is needed.
+The original source repository remains private at palychdev/palych.bio. This repository contains the static files served to visitors.
+
+`CNAME` binds the custom domain; `.nojekyll` publishes the files unchanged.
 
 Third-party licenses: `assets/fonts/OFL.txt` (Unbounded), `assets/vendor/lenis/LICENSE` (Lenis).
