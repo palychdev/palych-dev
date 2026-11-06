@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="startup.js?v=2"></script>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Палыч. Программы, которыми хочется пользоваться. Orbit, Archon и liber.net — делаю то, чего не хватало.">
+  <meta property="og:title" content="Палыч. Делаю то, чего не хватало.">
+  <meta property="og:description" content="Программы, которыми хочется пользоваться. Посмотреть, что получилось.">
+  <meta property="og:type" content="website">
+  <title>palych.dev — Делаю то, чего не хватало.</title>
+  <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Unbounded-Cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Unbounded-Latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css?v=8">
+  <script src="app.js?v=6" defer></script>
+  <script src="motion.js?v=5" defer></script>
+  <script src="scroll.js?v=3" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header wrap">
+    <button class="wordmark" type="button" id="reload-site" aria-label="palych.dev — обновить страницу">palych.dev</button>
+    <nav aria-label="Основная навигация">
+      <a href="#projects">Работы<span class="nav-count">03</span></a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact">На связи <svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-intro"><span>Палыч. Личный сайт.</span><span>Программы, которыми<br>хочется пользоваться.</span></div>
+      <div class="hero-composition">
+        <h1 id="hero-title"><span class="hero-line">Делаю то,</span> <span class="hero-line">чего не</span> <span class="hero-line">хватало<span class="period">.</span></span></h1>
+        <a class="hero-mark" href="#projects" aria-label="Перейти к проектам">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><path d="M82 0h36v57l40-40 25 25-40 40h57v36h-57l40 40-25 25-40-40v57H82v-57l-40 40-25-25 40-40H0V82h57L17 42l25-25 40 40Z"/></svg>
+          <span class="mark-label">Посмотреть<br>что получилось <span aria-hidden="true">↓</span></span>
+        </a>
+      </div>
+      <div class="hero-bottom"><p>Придумываю. Разбираюсь.<br>Собираю своё.</p></div>
+    </section>
+
+    <section class="projects wrap section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">Вот что<br>получилось.</h2><div class="filters" role="group" aria-label="Показать проекты по типу"><button type="button" data-filter="all" aria-pressed="true">Все <span>03</span></button><button type="button" data-filter="tool" aria-pressed="false">Утилиты</button><button type="button" data-filter="browser" aria-pressed="false">Браузер</button></div></div>
+      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+      <div class="project-grid">
+        <article class="project project-featured" data-category="tool">
+          <a class="project-cover orbit-cover" href="https://github.com/palychdev/Orbit" target="_blank" rel="noopener noreferrer" data-project="orbit" aria-label="Посмотреть проект Orbit">
+            <div class="project-poster poster-orbit" aria-hidden="true"><span class="poster-heading">Orbit</span><div class="poster-rule"></div><div class="orbit-emblem"><span class="orbit-track track-outer"></span><span class="orbit-track track-middle"></span><span class="orbit-track track-inner"></span><span class="orbit-axis"></span><span class="orbit-satellite satellite-one"></span><span class="orbit-satellite satellite-two"></span><strong>o.</strong></div><div class="poster-caption">Всё под рукой.<br>Одним движением.</div></div>
+            <span class="cover-action"><svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></span>
+          </a>
+          <div class="project-info"><div><h3><a href="https://github.com/palychdev/Orbit" target="_blank" rel="noopener noreferrer" data-project="orbit">Orbit</a></h3><p>Любимые приложения.<br>Одним движением.</p></div><button type="button" class="project-more" data-project="orbit" aria-label="Подробнее об Orbit"><span>О проекте</span><svg class="arrow" aria-hidden="true"><use href="#plus"/></svg></button></div>
+        </article>
+        <article class="project" data-category="tool">
+          <a class="project-cover archon-cover" href="https://github.com/palychdev/archon" target="_blank" rel="noopener noreferrer" data-project="archon" aria-label="Посмотреть проект Archon"><div class="project-poster poster-archon" aria-hidden="true"><span class="poster-heading">Archon</span><div class="poster-rule"></div><div class="archon-emblem"><span></span><span></span><span></span><strong>a.</strong></div><div class="poster-caption">Посмотреть,<br>что внутри.</div></div><span class="cover-action"><svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></span></a>
+          <div class="project-info"><div><h3><a href="https://github.com/palychdev/archon" target="_blank" rel="noopener noreferrer" data-project="archon">Archon</a></h3><p>Проверяет файлы.<br>Заглядывает в архивы.</p></div><button type="button" class="project-more" data-project="archon" aria-label="Подробнее об Archon"><svg class="arrow" aria-hidden="true"><use href="#plus"/></svg></button></div>
+        </article>
+        <article class="project" data-category="browser">
+          <a class="project-cover liber-cover" href="https://github.com/palychdev/liber.net" target="_blank" rel="noopener noreferrer" data-project="liber" aria-label="Посмотреть проект liber.net"><div class="liber-poster project-poster" aria-hidden="true"><span class="liber-heading">liber.net</span><div class="liber-line"></div><div class="liber-orbit"><span>l.</span></div><div class="liber-bottom">Своя точка<br>входа в сеть.<svg class="arrow"><use href="#arrow-ne"/></svg></div></div><span class="cover-action"><svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></span></a>
+          <div class="project-info"><div><h3><a href="https://github.com/palychdev/liber.net" target="_blank" rel="noopener noreferrer" data-project="liber">liber.net</a></h3><p>Собственный браузер.<br>На базе Chromium.</p></div><button type="button" class="project-more" data-project="liber" aria-label="Подробнее о liber.net"><svg class="arrow" aria-hidden="true"><use href="#plus"/></svg></button></div>
+        </article>
+      </div>
+      <a class="all-work" href="https://github.com/PalychDev" target="_blank" rel="noopener noreferrer">Остальное — на GitHub <svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></a>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="wrap"><div class="about-label">Человек за проектами <svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></div><h2 id="about-title">Мне нравится,<br>когда идея<br><span class="underlined">работает.</span></h2><div class="about-body"><div class="about-identity" aria-hidden="true">palych<br>.dev</div><div><p>Я Палыч. Разбираюсь в том, как всё устроено, и собираю собственные штуки.</p><p>Сейчас это приложения для компьютера, веб и эксперименты с интерфейсами. Интересно пройти весь путь: от «а что, если» до «попробуй».</p><a class="text-link" href="https://github.com/PalychDev" target="_blank" rel="noopener noreferrer">Посмотреть код <svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div></div></div>
+    </section>
+
+    <section class="contact wrap section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-kicker">Хорошие штуки начинаются с разговора.</div><h2 id="contact-title">Есть мысль?<br>Давай обсудим<span>.</span></h2>
+      <a class="contact-main" href="https://t.me/qpobo" target="_blank" rel="noopener noreferrer">Написать в Telegram <svg class="arrow" aria-hidden="true"><use href="#arrow-ne"/></svg></a>
+      <div class="contact-secondary"><a href="mailto:palychbn@gmail.com">palychbn@gmail.com</a><button type="button" id="copy-email">Скопировать почту <svg class="arrow" aria-hidden="true"><use href="#copy"/></svg></button></div><p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="wordmark" href="#top" aria-label="В начало">palych.dev</a><div><span>© 2026</span></div><a class="back-top" href="#top">Наверх <span aria-hidden="true">↑</span></a></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title" data-lenis-prevent>
+    <div class="dialog-bar"><span>Разбираем проект</span><button type="button" class="dialog-close" aria-label="Закрыть проект"><svg class="arrow" aria-hidden="true"><use href="#plus"/></svg></button></div>
+    <div class="dialog-content"><p id="dialog-type" class="dialog-type"></p><h2 id="dialog-title"></h2><p id="dialog-summary" class="dialog-summary"></p><div id="dialog-media"></div><div id="dialog-body" class="dialog-body"></div><div id="dialog-links" class="dialog-links"></div></div>
+  </dialog>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="arrow-ne" viewBox="0 0 32 32"><path d="M7 25 25 7M7 7h18v18"/></symbol><symbol id="plus" viewBox="0 0 32 32"><path d="M16 5v22M5 16h22"/></symbol><symbol id="copy" viewBox="0 0 32 32"><rect x="10" y="10" width="16" height="17" rx="2"/><path d="M21 10V5H5v16h5"/></symbol></defs></svg>
+</body>
+</html>
